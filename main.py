@@ -55,4 +55,6 @@ for event in gamepad.read_loop():
             porcentaje.put(-event.value*100/1023)
         elif(event.code==lTrig):
             porcentaje.put(event.value*100/1023)
+        else:
+            print(event)
         
